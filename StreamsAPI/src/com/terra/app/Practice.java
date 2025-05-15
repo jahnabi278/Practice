@@ -2,6 +2,8 @@ package com.terra.app;
 
 import java.util.*;
 import java.util.stream.*;
+import java.util.Arrays;
+
 
 public class Practice {
 
@@ -71,7 +73,10 @@ public class Practice {
 		System.out.println(squareSet);
 		System.out.println(reducedNumber);
 
-
+		// filter only numbers
+		String[] arr = { "123", "abc", "453", "12g3", "78", "test" };
+		List<String> numberList = Arrays.stream(arr).filter(x -> x.matches("\\d+")).collect(Collectors.toList());
+		numberList.forEach(System.out::println);
 	}
 
 }
