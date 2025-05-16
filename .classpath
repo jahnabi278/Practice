@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="JavaTestApplication/src/main/java"/>
+	<classpathentry kind="src" path="JavaTestApplication/src/test/java"/>
+	<classpathentry kind="src" path="PracticeDemo/src/main/java"/>
+	<classpathentry kind="src" path="PracticeDemo/src/test/java"/>
+	<classpathentry kind="src" path="test/src/main/java"/>
+	<classpathentry kind="src" path="test/src/test/java"/>
+	<classpathentry kind="lib" path="PracticeDemo/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="test/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="output" path="StreamsAPI/bin"/>
+</classpath>

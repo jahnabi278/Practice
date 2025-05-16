@@ -1,7 +1,0 @@
-
-/**
- * @author JahnabiSharma
- *
- */
-module StreamsAPI {
-}
