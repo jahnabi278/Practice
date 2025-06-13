@@ -5,8 +5,10 @@ import java.util.Arrays;
 public class StringMethods {
 
 	public static void main(String[] args) {
-		String str = "Hello this is TERRAPAY SOLUTION INDIA PRIVATE LIMITED !";
-		String str1 = " is TERRAPAY SOLUTION INDIA PRIVATE LIMITED !";
+		String str = "      Hello this is TERRAPAY SOLUTION INDIA PRIVATE LIMITED !        ";
+		String str1 = " is TERRAPAY SOLUTION "
+				+ "        INDIA PRIVATE LIMITED !"
+				+ "        ";
 
 		System.out.println(str);
 		System.out.println("Length :" + str.length());
@@ -54,6 +56,9 @@ public class StringMethods {
 		Arrays.asList(str.split(" ")).forEach(s -> System.out.print(s + " "));
 		System.out.println();
 		System.out.println("Join : " + str.join("-", "a", "b", "c"));
+		System.out.println("Strip Leading : trim whitespace from beginning  " + str.stripLeading());
+		System.out.println("Strip Trailing : trim whitespace from end " + str.stripTrailing());
+		System.out.println("Strip Indent : " + str1.stripIndent());
 
 	}
 
