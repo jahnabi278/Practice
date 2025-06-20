@@ -17,8 +17,6 @@ public class FindSecondHighElementFromArray {
 			if (intArray[i] > max1) {
 				max2 = max1;
 				max1 = intArray[i];
-			} else if (intArray[i] > max1) {
-				max2 = intArray[i];
 			}
 		}
 

@@ -23,6 +23,8 @@ public class FilterFunction {
 		// find first string
 		Optional<String> firstStream = names.stream().filter(n -> n.toLowerCase().startsWith("c")).findFirst();
 		System.out.println(firstStream.get());
+		
+		
 
 	}
 }
