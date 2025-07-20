@@ -15,6 +15,9 @@ public class MapFunction {
 				.flatMap(i -> integerList.stream().filter(j -> i < j && i + j == target).map(j -> List.of(i, j)))
 				.collect(Collectors.toList());
 
+		integerList.stream().flatMap(i -> integerList.stream().filter(j -> i + j == target).map(j -> List.of(i, j)))
+				.collect(Collectors.toList()).iterator().forEachRemaining(x -> System.out.println("One line :" + x));
+
 		System.out.println(ls);
 
 		// Optimized Version Using Index-based Stream

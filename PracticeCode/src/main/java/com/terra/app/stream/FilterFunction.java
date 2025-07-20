@@ -8,8 +8,11 @@ public class FilterFunction {
 	public static void main(String[] args) {
 		// return even numbers from the list
 		List<Integer> integerList = List.of(2, 3, 4, 5, 1, 6, 7, 8, 9, 11);
+		
 		integerList.stream().filter(x -> (x % 2 == 0)).collect(Collectors.toList()).iterator()
 				.forEachRemaining(x -> System.out.println(x));
+		
+		integerList.stream().filter(x -> x%2 ==0).collect(Collectors.toList()).iterator().forEachRemaining(s->System.out.println(s));
 		// printing as list
 		System.out.println(integerList.stream().filter(x -> (x % 2 == 0)).collect(Collectors.toList()));
 
@@ -22,7 +25,7 @@ public class FilterFunction {
 		System.out.println(nameStream);
 		// find first string
 		Optional<String> firstStream = names.stream().filter(n -> n.toLowerCase().startsWith("c")).findFirst();
-		System.out.println(firstStream.get());
+		System.out.println("Optional "+firstStream.get());
 		
 		
 
