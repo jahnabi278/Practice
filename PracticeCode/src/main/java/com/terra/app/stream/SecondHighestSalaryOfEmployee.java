@@ -13,7 +13,9 @@ public class SecondHighestSalaryOfEmployee {
 		emp.add(new Employee("Mriga", 60000));
 
 		System.out.println(
-				emp.stream().map(Employee::getSalary).distinct().sorted(Comparator.reverseOrder()).skip(1).findFirst());
+				emp.stream().map(Employee::getSalary)
+				.distinct().sorted(Comparator.reverseOrder())
+				.skip(1).findFirst());
 	}
 
 	static class Employee {
