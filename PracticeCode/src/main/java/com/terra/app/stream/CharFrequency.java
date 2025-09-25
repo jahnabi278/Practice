@@ -12,14 +12,17 @@ public class CharFrequency {
 		Map<Character, Long> map = IntStream.range(0, c.length).mapToObj(i -> c[i])
 				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 		map.forEach((K, V) -> System.out.println(K + " : " + V));
-		
-		
-		Map<Character, Long> map1 = IntStream.range(0, c.length).mapToObj(i -> c[i]).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
-		map1.forEach((K,V)-> System.out.println(K +" :" +V));
-		
-		
-		IntStream.range(0, c.length).mapToObj(i -> c[i]).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
-		map1.forEach((k,v)-> System.out.println(k +":"+v));
+		IntStream.range(0, c.length).mapToObj(i -> c[i])
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+				.forEach((k, v) -> System.out.println(k + ":" + v));
+
+		Map<Character, Long> map1 = IntStream.range(0, c.length).mapToObj(i -> c[i])
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+		map1.forEach((K, V) -> System.out.println(K + " :" + V));
+
+		IntStream.range(0, c.length).mapToObj(i -> c[i])
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+		map1.forEach((k, v) -> System.out.println(k + ":" + v));
 	}
 
 }
